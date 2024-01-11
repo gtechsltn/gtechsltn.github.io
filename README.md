@@ -9,6 +9,20 @@
 + https://www.npmjs.com/package/jquery/v/3.7.1
 + https://www.npmjs.com/package/bootstrap/v/3.4.1
 + https://www.npmjs.com/package/eonasdan-bootstrap-datetimepicker
+  + https://www.npmjs.com/browse/depended/eonasdan-bootstrap-datetimepicker
+  + https://www.npmjs.com/package/gzkras-ember-cli-bootstrap-datetimepicker
+    + https://github.com/jasonmit/ember-cli-moment-shim
+    + ember install ember-cli-moment-shim
+    + https://github.com/Eonasdan/bootstrap-datetimepicker
+      + https://github.com/monim67/bootstrap-datetimepicker
+      + https://monim67.github.io/bootstrap-datetimepicker/
+    + https://cdnjs.com/libraries/bootstrap-datetimepicker/4.17.47
+  + https://github.com/Eonasdan/tempus-dominus
+    + https://getdatepicker.com/6/installing.html
+
+# Day.js (Alternatives to Moment.js)
++ https://www.npmjs.com/package/dayjs
++ https://mirzaleka.medium.com/the-complete-guide-to-day-js-fb835a5d945a
 
 ```
 ember new --no-welcome website
@@ -30,7 +44,10 @@ npm install --save-dev eonasdan-bootstrap-datetimepicker
 npm install --save-dev moment@^2.0
 npm install --save-dev moment-timezone@^0.5
 
-npm install --save-dev eonasdan-bootstrap-datetimepicker
+ember install ember-cli-moment-shim
+npm install --save-dev moment
+npm install --save-dev moment-timezone
+
 ```
 
 ## Setup Bootstrap 3 in Ember.js

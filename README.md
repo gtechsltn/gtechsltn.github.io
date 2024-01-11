@@ -3,6 +3,10 @@
 + https://gtechsltn.github.io/
 + https://github.com/gtechsltn/gtechsltn.github.io/
 
+```
+ember version --verbose && npm --version && yarn --version
+```
+
 # Ember.js
 + https://www.npmjs.com/package/ember-cli-sass
 + https://www.npmjs.com/package/@ember/jquery

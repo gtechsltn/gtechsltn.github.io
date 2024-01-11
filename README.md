@@ -1,2 +1,2 @@
-# gtechsltn.github.io
-Global Technology Solution
+# Global Technology Solution
+https://gtechsltn.github.io/

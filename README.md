@@ -43,6 +43,8 @@ ember install @ember/jquery
 npm install --save-dev jquery@^3.0
 npm install --save-dev bootstrap@^3.0
 
+npm install --save-dev fontawesome-4.7
+
 ember install ember-cli-bootstrap-datetimepicker
 npm install --save-dev eonasdan-bootstrap-datetimepicker@4.17.47
 npm install --save-dev moment@^2.0
@@ -51,8 +53,11 @@ npm install --save-dev moment-timezone@^0.5
 ember install ember-cli-moment-shim
 npm install --save-dev moment
 npm install --save-dev moment-timezone
+
 ```
+
 ## Setup SASS in Ember.js
+
 + Install ember-cli-sass
   + ember install ember-cli-sass
 + Rename app.css -> app.scss
@@ -106,3 +111,7 @@ module.exports = function (defaults) {
   return app.toTree();
 };
 ```
+
+# Setup Font-Awesome 4.7.0 in Ember.js
++ https://www.npmjs.com/package/ember-font-awesome
++ ember install ember-font-awesome

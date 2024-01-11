@@ -1,0 +1,107 @@
+{{page-title "Website2"}}
+
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button
+        type="button"
+        class="navbar-toggle collapsed"
+        data-toggle="collapse"
+        data-target="#navbar"
+        aria-expanded="false"
+        aria-controls="navbar"
+      >
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Home</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="#">Bootstrap 3 Datetimepicker
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <h2 class="page-header">Datetimepicker with Bootstrap 3</h2>
+  <div class="row">
+    <div class="col-sm-6">
+      <form action="" method="post">
+        <p>
+          <label>12hr Date-Time:</label>
+          <div class="input-group date" id="id_0">
+            <input
+              type="text"
+              value="05/16/2018 12:31:00 AM"
+              class="form-control"
+              required
+            />
+            <span class="input-group-addon">
+              <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+            </span>
+          </div>
+        </p>
+        <p>
+          <label>24hr Date-Time:</label>
+          <div class="input-group date" id="id_1">
+            <input
+              type="text"
+              value="05/16/2018 11:31:00"
+              class="form-control"
+              required
+            />
+            <span class="input-group-addon">
+              <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+            </span>
+          </div>
+        </p>
+        <p>
+          <label>12hr Time:</label>
+          <div class="input-group date" id="id_2">
+            <input
+              type="text"
+              value="12:31:00 AM"
+              class="form-control"
+              required
+            />
+            <span class="input-group-addon">
+              <i class="glyphicon glyphicon-time fa fa-clock-o"></i>
+            </span>
+          </div>
+        </p>
+        <p>
+          <label>24hr Time:</label>
+          <div class="input-group date" id="id_3">
+            <input type="text" value="11:31:00" class="form-control" required />
+            <span class="input-group-addon">
+              <i class="glyphicon glyphicon-time fa fa-clock-o"></i>
+            </span>
+          </div>
+        </p>
+        <p>
+          <label>Date only:</label>
+          <div class="input-group date" id="id_4">
+            <input
+              type="text"
+              value="05/16/2018"
+              class="form-control"
+              required
+            />
+            <span class="input-group-addon">
+              <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+            </span>
+          </div>
+        </p>
+      </form>
+    </div>
+  </div>
+</div>
+
+{{outlet}}

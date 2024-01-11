@@ -6,6 +6,8 @@
 # Ember.js
 + https://www.npmjs.com/package/ember-cli-sass
 + https://www.npmjs.com/package/@ember/jquery
++ https://www.npmjs.com/package/jquery/v/3.7.1
++ https://www.npmjs.com/package/bootstrap/v/3.4.1
 + https://www.npmjs.com/package/eonasdan-bootstrap-datetimepicker
 
 ```

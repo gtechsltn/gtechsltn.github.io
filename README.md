@@ -22,7 +22,6 @@
   + https://www.npmjs.com/package/ember-cli-bootstrap-datetimepicker
     + https://discuss.emberjs.com/t/ember-cli-bootstrap-datepicker-and-jquery-ui/9257
     + https://stackoverflow.com/questions/45122176/how-to-add-bootstrap-3-datepicker-to-angular-4-project
-+ https://www.npmjs.com/package/@types/bootstrap.v3.datetimepicker
 
 # Day.js (Alternatives to Moment.js)
 + https://www.npmjs.com/package/dayjs
@@ -44,16 +43,14 @@ ember install @ember/jquery
 npm install --save-dev jquery@^3.0
 npm install --save-dev bootstrap@^3.0
 
-npm install --save-dev eonasdan-bootstrap-datetimepicker
+ember install ember-cli-bootstrap-datetimepicker
+npm install --save-dev eonasdan-bootstrap-datetimepicker@4.17.47
 npm install --save-dev moment@^2.0
 npm install --save-dev moment-timezone@^0.5
 
 ember install ember-cli-moment-shim
 npm install --save-dev moment
 npm install --save-dev moment-timezone
-
-ember install ember-cli-bootstrap-datetimepicker
-npm i @types/bootstrap.v3.datetimepicker
 ```
 
 ## Setup Bootstrap 3 in Ember.js

@@ -16,4 +16,6 @@ ember install @ember/jquery
 npm install --save-dev jquery@^3.0
 
 npm install --save-dev eonasdan-bootstrap-datetimepicker
+npm install --save-dev moment@^2.0
+npm install --save-dev moment-timezone@^0.5
 ```

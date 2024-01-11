@@ -44,6 +44,7 @@ npm install --save-dev jquery@^3.0
 npm install --save-dev bootstrap@^3.0
 
 npm install --save-dev fontawesome-4.7
+npm install --save-dev font-awesome@^4
 
 ember install ember-cli-bootstrap-datetimepicker
 npm install --save-dev eonasdan-bootstrap-datetimepicker@4.17.47
@@ -88,30 +89,61 @@ module.exports = function (defaults) {
   app.import('node_modules/bootstrap/dist/js/bootstrap.min.js');
   app.import('node_modules/bootstrap/dist/css/bootstrap.min.css');
 
-  // Bootstrap 3 Fonts
+  // Font Awesome 4.7.0: BEGIN
+  // ----------------------------------------------------------------
+  app.import('node_modules/fontawesome-4.7/css/font-awesome.min.css');
+
+  // Font Awesome 4.7.0: fontawesome-webfont.ttf
+  app.import('node_modules/fontawesome-4.7/fonts/fontawesome-webfont.ttf', {
+    destDir: 'fonts',
+  });
+
+  // Font Awesome 4.7.0: fontawesome-webfont.woff
+  app.import('node_modules/fontawesome-4.7/fonts/fontawesome-webfont.woff', {
+    destDir: 'fonts',
+  });
+
+  // Font Awesome 4.7.0: fontawesome-webfont.woff2
+  app.import('node_modules/fontawesome-4.7/fonts/fontawesome-webfont.woff2', {
+    destDir: 'fonts',
+  });
+
+  // ----------------------------------------------------------------
+  // Font Awesome 4.7.0: END
+
+  // Bootstrap 3 Glyphicons: BEGIN
+  // ----------------------------------------------------------------
+
+  // Bootstrap 3 Glyphicons: glyphicons-halflings-regular.ttf
   app.import('node_modules/bootstrap/fonts/glyphicons-halflings-regular.ttf', {
     destDir: 'fonts',
   });
 
-  // Bootstrap 3 Fonts
-  app.import(
-    'node_modules/bootstrap/fonts/glyphicons-halflings-regular.woff2',
-    { destDir: 'fonts' },
-  );
-
-  // Bootstrap 3 Fonts
+  // Bootstrap 3 Glyphicons: glyphicons-halflings-regular.woff
   app.import('node_modules/bootstrap/fonts/glyphicons-halflings-regular.woff', {
     destDir: 'fonts',
   });
+
+  // Bootstrap 3 Glyphicons: glyphicons-halflings-regular.woff2
+  app.import(
+    'node_modules/bootstrap/fonts/glyphicons-halflings-regular.woff2',
+    {
+      destDir: 'fonts',
+    },
+  );
+
+  // ----------------------------------------------------------------
+  // Bootstrap 3 Glyphicons: END
 
   // Bootstrap 3 Datetimepicker
   app.import(
     'node_modules/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js',
   );
+
   return app.toTree();
 };
 ```
 
 # Setup Font-Awesome 4.7.0 in Ember.js
-+ https://www.npmjs.com/package/ember-font-awesome
-+ ember install ember-font-awesome
++ https://www.npmjs.com/package/fontawesome-4.7
++ https://www.npmjs.com/package/font-awesome

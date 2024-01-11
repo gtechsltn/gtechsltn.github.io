@@ -13,8 +13,10 @@ ember new --no-welcome website
 cd website
 
 ember install ember-cli-sass
+
 npm uninstall --save ember-cli-sass
 npm install --save ember-cli-sass
+
 npm uninstall --save-dev sass
 npm install --save-dev sass
 

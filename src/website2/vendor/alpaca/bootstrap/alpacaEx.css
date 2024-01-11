@@ -1,0 +1,42 @@
+.autoEl>hr {
+    margin: 10px;
+}
+.search-folder-metadata-result{
+    height:386px;
+}
+input.alpaca-control,select.alpaca-control, button.alpaca-control
+{
+    height: 26px!important;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+    padding:4px;
+}
+.alpaca-field, .alpaca-icon , .alpaca-control-label, .alpaca-control, .multiselect-container>li {
+    font-size:12px!important;
+    padding: 3px 6px!important;
+    margin-bottom:0px;
+}
+.multiselect-container>li>a {
+    padding:0px!important;
+}
+.spacer .alpaca-form-buttons-container{
+    margin-top:0px;
+}
+.ts-body-metadata{
+    overflow-y: auto;
+    overflow-x: hidden!important;
+}
+.ts-folder-metadata-col{
+    cursor: pointer;
+    font-size: 12px;
+}
+.ts-pagination {
+    margin:0px;
+    font-size:12px;
+}
+.ts-button.ts-button-cancel{
+    background-color: #999;
+}
+option:disabled  { 
+    color: gray!important;
+}

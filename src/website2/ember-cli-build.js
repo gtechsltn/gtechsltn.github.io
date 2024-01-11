@@ -5,7 +5,17 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 module.exports = function (defaults) {
   const app = new EmberApp(defaults, {
     // Add options here
+    fingerprint: {
+      extensions: ['css', 'js', 'map'],
+    },
+    babel: {
+      sourceMaps: 'inline',
+    },
   });
+
+  /*
+  // Bootstrap 3 JS
+  app.import('node_modules/bootstrap/dist/js/bootstrap.min.js');
 
   // Bootstrap 3 CSS
   app.import('node_modules/bootstrap/dist/css/bootstrap.min.css');
@@ -56,9 +66,6 @@ module.exports = function (defaults) {
   // ----------------------------------------------------------------
   // Font Awesome 4.7.0: END
 
-  // Bootstrap 3 JS
-  app.import('node_modules/bootstrap/dist/js/bootstrap.min.js');
-
   // Bootstrap 3 Datetimepicker
   app.import(
     'node_modules/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js',
@@ -73,6 +80,24 @@ module.exports = function (defaults) {
 
   // ----------------------------------------------------------------
   // Alpaca: END
+
+  */
+
+  app.import('node_modules/bootstrap/js/transition.js');
+  app.import('node_modules/bootstrap/js/collapse.js');
+  app.import('node_modules/bootstrap/dist/js/bootstrap.min.js');
+  app.import('node_modules/bootstrap/dist/css/bootstrap.min.css');
+  app.import('node_modules/bootstrap/fonts/glyphicons-halflings-regular.ttf', {destDir: 'fonts'});
+  app.import('node_modules/bootstrap/fonts/glyphicons-halflings-regular.woff2', {destDir: 'fonts'});
+  app.import('node_modules/bootstrap/fonts/glyphicons-halflings-regular.woff', {destDir: 'fonts'});
+  app.import('node_modules/font-awesome/css/font-awesome.min.css');
+  app.import('node_modules/font-awesome/fonts/fontawesome-webfont.ttf', { destDir: 'fonts' });
+  app.import('node_modules/font-awesome/fonts/fontawesome-webfont.woff', { destDir: 'fonts' });
+  app.import('node_modules/font-awesome/fonts/fontawesome-webfont.woff2', { destDir: 'fonts' });
+  app.import('vendor/tsExt.js');
+  app.import('vendor/alpaca/bootstrap/alpaca.js');
+  app.import('vendor/alpaca/bootstrap/alpacaEx.css');
+  app.import('vendor/alpaca/bootstrap/alpaca.css');
 
   return app.toTree();
 };

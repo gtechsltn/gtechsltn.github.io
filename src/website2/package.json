@@ -68,11 +68,12 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.7.1",
     "loader.js": "^4.7.0",
-    "moment": "^2.24.0",
-    "moment-timezone": "^0.5.27",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.4.1",
     "prettier": "^3.0.3",
     "qunit": "^2.20.0",
     "qunit-dom": "^2.0.0",
+    "rsvp": "^4.8.5",
     "sass": "^1.69.7",
     "stylelint": "^15.11.0",
     "stylelint-config-standard": "^34.0.0",
@@ -87,6 +88,7 @@
     "edition": "octane"
   },
   "dependencies": {
+    "broccoli-terser-sourcemap": "^4.1.1",
     "ember-cli-sass": "^11.0.1"
   }
 }

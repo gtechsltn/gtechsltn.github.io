@@ -52,8 +52,20 @@ ember install ember-cli-moment-shim
 npm install --save-dev moment
 npm install --save-dev moment-timezone
 ```
+## Setup SASS in Ember.js
++ Install ember-cli-sass
+  + ember install ember-cli-sass
++ Rename app.css -> app.scss
+  + from: \app\styles\app.css
+  + to: \app\styles\app.scss
 
 ## Setup Bootstrap 3 in Ember.js
+
++ Download Bootstrap 3 from [link](https://getbootstrap.com/docs/3.4/getting-started/#download)
++ Unzip 'bootstrap-3.4.1-dist.zip' to %Temp%\bootstrap-3.4.1-dist\
++ Copy folder
+  + from %Temp%\bootstrap-3.4.1-dist\fonts
+  + to dist\fonts
 
 ember-cli-build.js
 
@@ -67,9 +79,30 @@ module.exports = function (defaults) {
     // Add options here
   });
 
+  // Bootstrap 3
   app.import('node_modules/bootstrap/dist/js/bootstrap.min.js');
   app.import('node_modules/bootstrap/dist/css/bootstrap.min.css');
 
+  // Bootstrap 3 Fonts
+  app.import('node_modules/bootstrap/fonts/glyphicons-halflings-regular.ttf', {
+    destDir: 'fonts',
+  });
+
+  // Bootstrap 3 Fonts
+  app.import(
+    'node_modules/bootstrap/fonts/glyphicons-halflings-regular.woff2',
+    { destDir: 'fonts' },
+  );
+
+  // Bootstrap 3 Fonts
+  app.import('node_modules/bootstrap/fonts/glyphicons-halflings-regular.woff', {
+    destDir: 'fonts',
+  });
+
+  // Bootstrap 3 Datetimepicker
+  app.import(
+    'node_modules/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js',
+  );
   return app.toTree();
 };
 ```

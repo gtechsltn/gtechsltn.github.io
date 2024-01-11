@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "axe/time-and-media": [
+      "default",
+      {
+        "meta-content-type": "off",
+        "meta-refresh": "off"
+      }
+    ]
+  }
+}

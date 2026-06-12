@@ -1,4 +1,4 @@
-import { dm as setComponentManager$1 } from './app-lGXMA0hk.js';
+import { dm as setComponentManager$1 } from './app-5rzXUba5.js';
 
 /**
    Associate a class with a component manager (an object that is responsible for

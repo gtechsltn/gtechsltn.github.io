@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/modules-4-12-BtzOU9oH.js","assets/managers-CbMgnSoo-B51bluDt.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/modules-4-12-DBjbpUpC.js","assets/managers-CbMgnSoo-BvzyMwpP.js"])))=>i.map(i=>d[i]);
 true              &&(function polyfill() {
 	const relList = document.createElement("link").relList;
 	if (relList && relList.supports && relList.supports("modulepreload")) return;
@@ -72246,7 +72246,7 @@ function setupGlobal(app, importCallback) {
  * @param {Application} app your `@ember/application` Application sub-class
  */
 function setupInspector (app) {
-  setupGlobal(app, () => __vitePreload(() => import('./modules-4-12-BtzOU9oH.js'),true              ?__vite__mapDeps([0,1]):void 0));
+  setupGlobal(app, () => __vitePreload(() => import('./modules-4-12-DBjbpUpC.js'),true              ?__vite__mapDeps([0,1]):void 0));
 }
 
 {
